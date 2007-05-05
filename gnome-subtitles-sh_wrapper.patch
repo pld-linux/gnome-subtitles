@@ -4,5 +4,5 @@
 -#!/bin/bash
 -exec -a gnome-subtitles @MONO@ @prefix@/lib/gnome-subtitles/gnome-subtitles.exe "$@"
 +#!/bin/sh
-+exec -a gnome-subtitles @MONO@ @libdir@/gnome-subtitles/gnome-subtitles.exe "$@"
++exec gnome-subtitles @MONO@ @libdir@/gnome-subtitles/gnome-subtitles.exe "$@"
  
