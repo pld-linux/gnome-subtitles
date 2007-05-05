@@ -1,0 +1,8 @@
+--- gnome-subtitles-0.4/src/GnomeSubtitles/Execution/gnome-subtitles.in~	2006-08-26 00:17:06.000000000 +0200
++++ gnome-subtitles-0.4/src/GnomeSubtitles/Execution/gnome-subtitles.in	2007-05-05 09:18:28.043705871 +0200
+@@ -1,3 +1,3 @@
+-#!/bin/bash
+-exec -a gnome-subtitles @MONO@ @prefix@/lib/gnome-subtitles/gnome-subtitles.exe "$@"
++#!/bin/sh
++exec -a gnome-subtitles @MONO@ @libdir@/gnome-subtitles/gnome-subtitles.exe "$@"
+ 
