@@ -8,7 +8,7 @@ Version:	0.4
 Release:	0.1
 License:	GPL v2
 Group:		Applications
-Source0:	http://heanet.dl.sourceforge.net/gnome-subtiltles/%{name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/gnome-subtitles/%{name}-%{version}.tar.gz
 # Source0-md5:	5ae670478a278e83daf900a73dd906c9
 Patch0:		%{name}-sh_wrapper.patch
 URL:		http://gnome-subtitles.sourceforge.net/
