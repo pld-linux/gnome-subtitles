@@ -14,6 +14,8 @@ Patch0:		%{name}-sh_wrapper.patch
 URL:		http://gnome-subtitles.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	dotnet-gnome-sharp-devel >= 2.16
+BuildRequires:	dotnet-gtk-sharp2-devel >= 2.10
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
