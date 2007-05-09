@@ -2,12 +2,12 @@
 # TODO:	BRs
 #
 Summary:	A subtitle editor for the GNOME desktop
-#Summary(pl.UTF-8):	-
+Summary(pl.UTF-8):	Edytor napisów dla środowiska GNOME
 Name:		gnome-subtitles
 Version:	0.4
 Release:	0.1
 License:	GPL v2
-Group:		Applications
+Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/gnome-subtitles/%{name}-%{version}.tar.gz
 # Source0-md5:	5ae670478a278e83daf900a73dd906c9
 Patch0:		%{name}-sh_wrapper.patch
@@ -23,7 +23,10 @@ Gnome Subtitles is a subtitle editor for the GNOME desktop. It
 supports the most common text-based subtitle formats and allows for
 subtitle editing, conversion and synchronization.
 
-#%%description -l pl.UTF-8
+%description -l pl.UTF-8
+Gnome Subtitles to edytor napisów dla środowiska GNOME. Obsługuje
+większość popularnych tekstowych formatów napisów i umożliwia
+modyfikowanie, konwersję i synchronizację napisów.
 
 %prep
 %setup -q
