@@ -18,7 +18,7 @@ BuildRequires:	automake
 BuildRequires:	dotnet-gnome-sharp-devel >= 2.16
 BuildRequires:	dotnet-gtk-sharp2-devel >= 2.10
 BuildRequires:	rpmbuild(monoautodeps)
-Requires:	dotnet-gnome-sharp-devel >= 2.16
+Requires:	dotnet-gnome-sharp >= 2.16
 Requires:	dotnet-gtk-sharp2 >= 2.10
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
