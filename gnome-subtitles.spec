@@ -12,6 +12,7 @@ Source0:	http://dl.sourceforge.net/gnome-subtitles/%{name}-%{version}.tar.gz
 # Source0-md5:	5ae670478a278e83daf900a73dd906c9
 Patch0:		%{name}-sh_wrapper.patch
 URL:		http://gnome-subtitles.sourceforge.net/
+Requires:	mono
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	dotnet-gnome-sharp-devel >= 2.16
