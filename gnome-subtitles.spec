@@ -1,6 +1,7 @@
 #
 # TODO:	BRs
 #
+%include	/usr/lib/rpm/macros.mono
 Summary:	A subtitle editor for the GNOME desktop
 Summary(pl.UTF-8):	Edytor napisów dla środowiska GNOME
 Name:		gnome-subtitles
@@ -12,12 +13,13 @@ Source0:	http://dl.sourceforge.net/gnome-subtitles/%{name}-%{version}.tar.gz
 # Source0-md5:	5ae670478a278e83daf900a73dd906c9
 Patch0:		%{name}-sh_wrapper.patch
 URL:		http://gnome-subtitles.sourceforge.net/
-Requires:	mono
-Requires:	dotnet-gnome-sharp
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	dotnet-gnome-sharp-devel >= 2.16
 BuildRequires:	dotnet-gtk-sharp2-devel >= 2.10
+BuildRequires:	rpmbuild(monoautodeps)
+Requires:	dotnet-gnome-sharp-devel >= 2.16
+Requires:	dotnet-gtk-sharp2 >= 2.10
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
