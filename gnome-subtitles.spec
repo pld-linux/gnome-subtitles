@@ -7,12 +7,11 @@ Summary:	A subtitle editor for the GNOME desktop
 Summary(pl.UTF-8):	Edytor napisów dla środowiska GNOME
 Name:		gnome-subtitles
 Version:	0.8
-Release:	0.1
+Release:	1
 License:	GPL v2
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/gnome-subtitles/%{name}-%{version}.tar.gz
 # Source0-md5:	9590389ba91f9cfd94b6b36454dc2420
-Patch0:		%{name}-sh_wrapper.patch
 URL:		http://gnome-subtitles.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -27,6 +26,8 @@ Requires:	enchant
 Requires:	dotnet-gnome-sharp >= 2.16
 Requires:	dotnet-gtk-sharp2 >= 2.10
 Requires:	gtkspell
+# Temporary, when it stops crashing with dotnet-gtk-sharp2 2.12.5
+Conflicts:	dotnet-gtk-sharp2 > 2.12.1
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -41,12 +42,8 @@ modyfikowanie, konwersję i synchronizację napisów.
 
 %prep
 %setup -q
-#%patch0 -p1
 
 %build
-#{__aclocal}
-#{__autoconf}
-#{__automake}
 %configure
 %{__make}
 
