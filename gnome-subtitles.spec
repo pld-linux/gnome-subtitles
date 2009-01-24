@@ -21,6 +21,7 @@ BuildRequires:	gnome-doc-utils >= 0.3.2
 BuildRequires:	gstreamer-devel >= 0.10
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10
 BuildRequires:	intltool
+BuildRequires:	libtool
 BuildRequires:	mono-csharp
 BuildRequires:	rpmbuild(monoautodeps)
 BuildRequires:	sublib-devel >= 0.9
@@ -44,6 +45,10 @@ modyfikowanie, konwersję i synchronizację napisów.
 %setup -q
 
 %build
+cd gstreamer-playbin-0.2.1
+%{__libtoolize}
+%{__autoconf}
+cd ..
 %configure
 %{__make}
 
