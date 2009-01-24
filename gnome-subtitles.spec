@@ -17,8 +17,10 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	dotnet-gnome-sharp-devel >= 2.16
 BuildRequires:	dotnet-gtk-sharp2-devel >= 2.12.7
+BuildRequires:	gnome-doc-utils >= 0.3.2
 BuildRequires:	gstreamer-devel >= 0.10
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10
+BuildRequires:	intltool
 BuildRequires:	mono-csharp
 BuildRequires:	rpmbuild(monoautodeps)
 BuildRequires:	sublib-devel >= 0.9
