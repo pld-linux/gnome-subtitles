@@ -15,19 +15,23 @@ Source0:	http://dl.sourceforge.net/gnome-subtitles/%{name}-%{version}.tar.gz
 URL:		http://gnome-subtitles.sourceforge.net/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	docbook-dtd412-xml
 BuildRequires:	dotnet-gnome-sharp-devel >= 2.16
 BuildRequires:	dotnet-gtk-sharp2-devel >= 2.12.7
+BuildRequires:	gettext-devel
 BuildRequires:	gnome-doc-utils >= 0.3.2
 BuildRequires:	gstreamer-devel >= 0.10
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10
+BuildRequires:	gtk+2-devel
 BuildRequires:	intltool
 BuildRequires:	libtool
 BuildRequires:	mono-csharp
+BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(monoautodeps)
 BuildRequires:	sublib-devel >= 0.9
-Requires:	enchant
 Requires:	dotnet-gnome-sharp >= 2.16
 Requires:	dotnet-gtk-sharp2 >= 2.12.7
+Requires:	enchant
 Requires:	gtkspell
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
