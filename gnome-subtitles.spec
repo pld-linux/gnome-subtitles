@@ -18,7 +18,7 @@ BuildRequires:	automake
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	dotnet-gnome-sharp-devel >= 2.16
 BuildRequires:	dotnet-gtk-sharp2-devel >= 2.12.7
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gnome-doc-utils >= 0.3.2
 BuildRequires:	gstreamer-devel >= 0.10
 BuildRequires:	gstreamer-plugins-base-devel >= 0.10
