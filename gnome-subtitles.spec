@@ -2,7 +2,6 @@
 # TODO:	BRs
 #	separate package for libgstreamer_playbin.so
 #
-%include	/usr/lib/rpm/macros.mono
 Summary:	A subtitle editor for the GNOME desktop
 Summary(pl.UTF-8):	Edytor napisów dla środowiska GNOME
 Name:		gnome-subtitles
